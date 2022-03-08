@@ -1,0 +1,31 @@
+body {
+  background-color: rgb(251, 234, 208);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size:12px;
+}
+
+.tibia-container {
+  background-color: rgb(212, 192, 161);
+  padding: 1rem 1.5rem;
+  width: 50vw;
+  border-top: 20px solid rgb(80, 80, 80);
+  margin: .66rem .66rem;
+}
+
+.main-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#name-box {
+  width: 40%;
+  margin-right: .66rem;
+}
+
+#checkbox-ofWorld, #checkbox-title {
+  margin-left: 1.66rem;
+  font-size: small;
+  vertical-align: middle;
+}
