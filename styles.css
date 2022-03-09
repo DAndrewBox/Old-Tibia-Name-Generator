@@ -1,15 +1,33 @@
 body {
-  background-color: rgb(251, 234, 208);
+  background-color: rgb(0, 0, 0);
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-size:12px;
+}
+
+label {
+  font-size: 11px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .tibia-container {
   background-color: rgb(212, 192, 161);
   padding: 1rem 1.5rem;
-  width: 50vw;
-  border-top: 20px solid rgb(80, 80, 80);
+  width: 66vw;
   margin: .66rem .66rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+}
+
+.tibia-container-title {
+  background-color: rgb(80, 80, 80);
+  padding: .33rem .66rem;
+  margin: .66rem .66rem;
+  color: white;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  margin-bottom: -9px;
+  letter-spacing: .75px;
 }
 
 .main-container {
@@ -17,6 +35,9 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: rgb(251, 234, 208);
+  border-image: url('paper_border.gif') 15 fill / 16px / 15px round;
+  padding: 1.66rem;
 }
 
 #name-box {
@@ -28,4 +49,44 @@ body {
   margin-left: 1.66rem;
   font-size: small;
   vertical-align: middle;
+}
+
+#btn-new-name {
+  background-image: url(sbutton_submit.gif);
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0);
+  width: 120px;
+  height: 18px;
+  border: none;
+  transform: translateY(3px);
+  transition: all .033s ease-in-out;
+}
+
+#btn-new-name:active {
+  background-image: url(sbutton_submit_pressed.gif);
+  transform: translateY(4px);
+}
+
+#btn-new-name:hover {
+  cursor: pointer;
+}
+
+#btn-new-name span {
+  display: none;
+}
+
+.footer span {
+  width: 99vw;
+  font-size: smaller;
+  text-align: center;
+  color: darkgray;
+  bottom: .33rem;
+  position: absolute;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer a {
+  text-decoration: none;
+  color: orange;
+  font-weight: bold;
 }

@@ -2,12 +2,17 @@ function createRandomName(lenght, ofWorld, title) {
   let name = "";
   const vocals = ["a", "e", "i", "o", "u"];
   const consonants = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "y", "z"];
+  const mixed_consonants = ["nt", "ck", "ch", "ll", "tt", "bl", "cl", "fl", "gl", "pl", "sl", "br", "cr", "dr", "fr", "gr", "pr", "tr", "sc", "sk", "sm", "sn", "sp", "st", "sw", "tw"];
 
   for (var i = 0; i < lenght; i++) {
     if (i % 2 !== 0) {
       name += vocals[Math.floor(Math.random() * vocals.length)];
     } else {
-      name += consonants[Math.floor(Math.random() * consonants.length)];
+      if (Math.random() <= 0.5) {
+        name += mixed_consonants[Math.floor(Math.random() * mixed_consonants.length)];
+      } else {
+        name += consonants[Math.floor(Math.random() * consonants.length)];
+      }
     }
   }
 
