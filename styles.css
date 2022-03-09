@@ -9,6 +9,17 @@ label {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
+#background-image {
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.25;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-size: cover;
+  filter: blur(4px);
+}
+
 .tibia-container {
   background-color: rgb(212, 192, 161);
   padding: 1rem 1.5rem;
@@ -36,7 +47,7 @@ label {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgb(251, 234, 208);
-  border-image: url('paper_border.gif') 15 fill / 16px / 15px round;
+  border-image: url('./images/paper_border.gif') 15 fill / 16px / 15px round;
   padding: 1.66rem;
 }
 
@@ -52,7 +63,7 @@ label {
 }
 
 #btn-new-name {
-  background-image: url(sbutton_submit.gif);
+  background-image: url('./images/sbutton_submit.gif');
   background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, 0);
   width: 120px;
@@ -63,7 +74,7 @@ label {
 }
 
 #btn-new-name:active {
-  background-image: url(sbutton_submit_pressed.gif);
+  background-image: url('./images/sbutton_submit_pressed.gif');
   transform: translateY(4px);
 }
 

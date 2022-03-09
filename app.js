@@ -42,3 +42,17 @@ document.getElementById("btn-new-name").addEventListener("click", function() {
   const inputbox = document.getElementById("name-box");
   inputbox.setAttribute('value', createRandomName(3 + Math.random() * 5, ofWorld, title));
 });
+
+const bgImage = document.getElementById("background-image");
+const bgImageRNG = Math.random();
+var bgImageIndex = 0;
+
+for (var i = 0; i < 5; i++) {
+  if (bgImageRNG <= (i * 0.2)) {
+    bgImageIndex = i;
+    break;
+  }
+}
+
+bgImage.style.backgroundImage = "url('./images/backgrounds/bg" + bgImageIndex + ".jpg')";
+bgImage.style.backgroundSize = "cover";
